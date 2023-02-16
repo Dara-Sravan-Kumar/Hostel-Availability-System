@@ -1,0 +1,210 @@
+.nav-wrapper {
+  margin: auto;
+  max-width: 1126px;
+  padding: 10px;
+}
+
+/* header */  
+.header {
+  background-color: #37387a;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #37387a;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #37387a;
+  text-decoration: none;
+  color: #000;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #37387a;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font: normal 2em 'Cookie';
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+/* menu */
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+  
+}
+
+/* menu icon */  
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */  
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  
+  .header li a {
+    padding: 20px 30px;
+  }
+
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+
+
+
+
+/*.dropdown{
+
+    margin-right: 100px;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+body {
+  box-sizing: border-box;
+  color: #220f5f;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  padding: 0 10px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  padding:10px
+}
+
+tr th {
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #eeeeee;
+  text-align: left;
+  background-color: rgba(217, 221, 146, 0.2);
+}
+
+tr td {
+  border: 1px solid #eeeeee;
+  text-align: left;
+  padding:10px;
+}
+
+input {
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  width: 91%;
+  padding: 12px 12px;
+  font-family: 'Poppins', sans-serif;
+}
+
+input:hover {
+  background-color: #fffaf3;
+}
+
+input:focus {
+  outline: 1px solid #ccc;
+  border: 1px solid #ccc;
+}
+
+*/

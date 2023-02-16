@@ -1,0 +1,26 @@
+
+
+.dropdown{
+
+  margin-right: 45px;
+ 
+}
+.dropdown-style{
+  position: absolute;}
+
+.dropdown-menu { position:relative !important }
+
+.bg-myRed{
+  background-color: crimson;
+}
+
+.content{
+  padding: 5px;
+  height: 3000px;
+}
+
+.coloring{
+  color: black;
+}
+  
+  
